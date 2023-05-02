@@ -1,0 +1,127 @@
+.marqe {
+    background: aliceblue;
+    color: #000;
+    font-size: 28px;
+    font-family: sans-serif;
+    word-spacing: 5px;
+    padding: 20px;
+    /* transition: .3s; */
+    width: 88%;
+    margin: auto;
+    display: block;
+}
+img.image {
+    width: 348px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.margin {
+    margin: auto;
+    display: block;
+}
+button.login-btn:hover::before {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+button.login-btn::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    border-radius: 6px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .4s linear;
+}
+button.login-btn {
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 210px;
+    padding: 15px;
+    z-index: 1;
+    color: #fff;
+    background: #e16d6d;
+    border: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.round{
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 210px;
+    padding: 15px;
+    z-index: 1;
+    color: #fff;
+    background: #e16d6d;
+    border: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+button.round:hover::before {
+    transform: scaleZ(1);
+    /* transform-origin: bottom; */
+}
+button.round::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scaleY(0);
+    transition: transform .4s ease;
+}
+.round {
+    position: relative;
+    display: block;
+    /* margin: auto; */
+    width: 97px;
+    text-align: center;
+    z-index: 1;
+    height: 90px;
+    color: #fff;
+    background: #e16d6d;
+    border: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 18px 10px 36px 10px;
+}
+img.img-fluid {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+img.animation-image {
+    width: 50%;
+    border-radius: 20px;
+    top: 40%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    transition: .6s all;
+}
+h3 {
+    position: absolute;
+    top: 100%;
+}
